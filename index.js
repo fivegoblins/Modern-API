@@ -1,4 +1,11 @@
 const hapi = require('hapi');
+const mongoose = require('mongoose');
+
+mongoose.connect('mongodb://alexswartz:sunnyday4!@ds131814.mlab.com:31814/users');
+
+mongoose.connection.once('open', ()=> {
+    console.log('connected to database!');
+})
 
 const server = hapi.server({
     port: 4000,
