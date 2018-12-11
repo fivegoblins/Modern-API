@@ -3,7 +3,7 @@ const graphql = require('graphql');
 const {GraphQLObjectType, GraphQLString} = graphql;
 
 const PaintingType = new GraphQLObjectType ({
-    name: Painting,
+    name: 'Painting',
     fields: ()=> ({
         id: {type: GraphQLString},
         name: {type: GraphQLString},
