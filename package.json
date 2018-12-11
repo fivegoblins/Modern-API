@@ -5,6 +5,9 @@
   "repository": "https://github.com/fivegoblins/Modern-API.git",
   "author": "Alexandra <alexswartz9753@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
   "dependencies": {
     "hapi": "^17.8.1",
     "nodemon": "^1.18.8"
